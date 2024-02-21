@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --branco: #FFFFFF;
+    --cinza-escuro: #464646;
+    --cinza-claro: #A3A3A3;
+    --azul-botao: #4894FF;
+    --amarelo-botao: #FFB050;
+    --cor-de-fundo: #F7F4FD;
+    --fonte: "Montserrat",
+        sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 10px 16px 6px 16px;
+    color: #333333;
+    align-items: center;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.horario {
+    font-family: var(--fonte);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.container__inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 32px 0 32px 16px;
+    background-color: var(--cor-de-fundo);
+    gap: 12px;
+
+}
+
+.container__inicio__titulo_texto {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+.container__inicio__titulo {
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    color: var(--cinza-escuro);
+}
+
+.container__inicio__texto {
+    font-family: var(--fonte);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--cinza-claro);
+
+}
+
+.hoje {
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--cinza-escuro);
+    padding: 8px 0px 0px 28px;
+    background-color: var(--cor-de-fundo);
+
+}
+
+.container__pacientes {
+    padding: 16px;
+    margin: 16px;
+    background-color: var(--branco);
+    border-radius: 15px;
+}
+
+.container__pacientes__cima {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.container__pacientes__titulo {
+    margin-right: auto;
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--cinza-escuro);
+}
+
+.container__pacientes__cima img:last-child {
+    margin-left: auto;
+}
+
+.container__pacientes__meio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 47px;
+    font-family: var(--fonte);
+    color: var(--cinza-claro);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.horario {
+    padding: 9px 0px 8px 0px;
+    font-family: var(--fonte);
+    color: var(--cinza-escuro);
+    font-size: 12px;
+}
+
+.container__pacientes__fim {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+
+}
+
+.link-video {
+    text-decoration: none;
+    background-color: var(--amarelo-botao);
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-size: 14px;
+    padding: 13px 16px;
+    border-radius: 8px;
+
+}
+
+.link-audio {
+    text-decoration: none;
+    background-color: var(--branco);
+    font-family: var(--fonte);
+    color: var(--cinza-escuro);
+    font-size: 14px;
+    padding: 13px 16px;
+    box-shadow: 0 0 0 0.5px var(--cinza-claro);
+    border-radius: 8px;
+
+}
+
+.container__pacientes__fim1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.link-endereco {
+    background-color: var(--azul-botao);
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-size: 14px;
+    padding: 13px 86px;
+    border-radius: 8px;
+    text-decoration: none;
+}

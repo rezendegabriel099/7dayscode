@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<header class="cabecalho">
-    <p class="horario">03:33</p>
-    <img src="./img/icones.png" width="auto" height="auto" alt="icones wifi bateria e sinal">
-</header>
 
 <body>
     <section class="container__inicio">
@@ -20,6 +16,7 @@
             <h1 class="container__inicio__titulo">Olá, Sônia</h1>
             <p class="container__inicio__texto">Mais 4 consultas hoje</p>
         </div>
+    </section>
 
     </section>
     <h2 class="hoje">Hoje</h2>
@@ -73,7 +70,6 @@
             <a href="#" class="link-audio">Ligar por áudio</a>
         </div>
     </section>
-    <h2 class="hoje">Amanhã</h2>
     <section class="container__pacientes">
         <div class="container__pacientes__cima">
             <img src="./img/clara.png" alt="paciente">
@@ -90,6 +86,9 @@
             <a href="#" class="link-endereco">Ver endereço</a>
         </div>
     </section>
+
+
+    <h2 class="hoje">Amanhã</h2>
     <section class="container__pacientes">
         <div class="container__pacientes__cima">
             <img src="./img/luciana.png" alt="paciente">
@@ -208,6 +207,67 @@
             <a href="#" class="link-endereco">Ver endereço</a>
         </div>
     </section>
+
+    <div class="botao-flutuante">
+        <label for="opcoesBotao" class="botao-flutuante-label">
+            <img src="./img/botãoflutuante.png" alt="Botão Flutuante">
+        </label>
+        <div class="opcoes" id="opcoes">
+            <a href="#" class="opcao">
+                <img src="./img/pinazul.png" alt="Nova Consulta na Casa do Paciente">
+                <span>Nova Consulta na Casa do Paciente</span>
+            </a>
+            <a href="#" class="opcao">
+                <img src="./img/cameraazul.png" alt="Nova Consulta por Vídeo">
+                <span>Nova Consulta por Vídeo</span>
+            </a>
+        </div>
+    </div>
+    <footer class="rodape">
+        <div>
+            <a href="link_para_consultas">
+                <img src="./img/calendarioicone.png" width="auto" height="auto" alt="calendario">
+                <p>Consultas</p>
+            </a>
+        </div>
+        <div>
+            <a href="link_para_clientes">
+                <img src="./img/clientesicone.png" width="auto" height="auto" alt="clientes">
+                <p>Clientes</p>
+            </a>
+        </div>
+        <div>
+            <a href="link_para_relatorios">
+                <img src="./img/relatoriosicone.png" width="auto" height="auto" alt="relatorios">
+                <p>Relatórios</p>
+            </a>
+        </div>
+        <div>
+            <a href="link_para_menu">
+                <img src="./img/menuicone.png" width="auto" height="auto" alt="menu">
+                <p>Menu</p>
+            </a>
+        </div>
+        <div id="overlay"></div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var botaoFlutuanteLabel = document.querySelector(".botao-flutuante-label");
+            var opcoes = document.querySelector(".opcoes");
+            var overlay = document.getElementById("overlay");
+
+            botaoFlutuanteLabel.addEventListener("click", function () {
+                if (opcoes.style.display === "block") {
+                    opcoes.style.display = "none";
+                    overlay.style.display = "none";
+                } else {
+                    opcoes.style.display = "block";
+                    overlay.style.display = "block";
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

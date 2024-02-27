@@ -166,14 +166,12 @@ body {
     padding: 10px 0;
     text-align: center;
     border-radius: 20px;
-
 }
 
 .rodape div {
     display: inline-block;
     text-align: center;
     margin: 0 10px;
-
 }
 
 .rodape a {
@@ -273,14 +271,16 @@ body {
 
     .container__pacientes {
         display: block;
-        margin-right: 0;
     }
 }
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+
     .container__pacientes {
         width: calc(100% / 3);
+
     }
 }
 
@@ -293,4 +293,33 @@ body {
 .hoje,
 .container__pacientes {
     clear: left;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteudo {
+        margin-left: 120px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        width: 4%;
+        height: 100%;
+        padding: 2%;
+        border-radius: 0;
+    }
+
+    .rodape div {
+        margin: 10px 0;
+    }
 }
